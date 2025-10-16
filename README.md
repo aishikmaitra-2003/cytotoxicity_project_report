@@ -1,6 +1,6 @@
 # cytotoxicity_project_report
 
-This report is based on a 10,000 records based cytotoxic dataset where I had to perform various operations to find meaningful insights from the data.
+This report is based on a 10,000 records based cytotoxic dataset provided by Axleres Biosciences Pvt Ltd where I had to perform various operations to find meaningful insights from the data.
 
 # 1. Data preprocessing
 
