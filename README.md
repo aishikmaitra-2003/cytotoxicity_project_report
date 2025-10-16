@@ -35,3 +35,31 @@ The output came as 4284 which matches the original number of rows in the dataset
 So now I move to the trend analysis part.
 
 I also found out the extreme values (outliers) and found 20 rows worth outliers.
+
+# 2. Trend Analysis
+
+Here we analyze the trends of selective key columns in the data like cytotox_median_um,cytotox_lower_bound_um and cytotox_median_log
+We capture how cytotoxicity values are distributed without the extreme distortions from very rare high/low values.
+
+After detecting and removing extreme cytotoxicity outliers, histograms revealed that most compounds cluster around moderate toxicity values (100–500 µM). The log-scale distribution appears approximately normal, indicating consistent experimental behavior. Lower-bound distributions align closely with median values, suggesting tight confidence intervals and robust measurement quality. This analysis highlights that strong cytotoxins are statistically uncommon, while the dataset mainly represents weakly toxic chemicals.
+
+Now we see the most and least toxic chemicals by
+
+                  # top10 = data.sort_values('cytotox_median_um').head(10)
+
+                  # least10 = data.sort_values('cytotox_median_um').tail(10)
+                  
+Now we explore relation between key attributes nhit,ntested and cytotoxin_median_um(micrometer) as evident from the graph.We observe that majority of the data is for cytotoxic materials as highlighted in purple but a few are less toxic chemicals highlighted as yellow.
+
+# 3. Visualization
+
+For visualization purposes, I have plotted the correlation heatmap and the barplot of the top and least 10 toxins and created a visual to find out which toxin had more and which toxin had the least toxic materials in it.
+From the correlation heatmap we found out more about the key features and their proportionality relationship with each other.
+
+# Summary
+
+So summarizing everything we find out:
+
+The project provides a clear statistical and visual understanding of the chemical dataset, highlighting the high redundancy of the cytotoxicity metrics, the inverse relationship between chemical potency and the number of recorded hits, and the specific identity of the most toxic compounds.
+
+
