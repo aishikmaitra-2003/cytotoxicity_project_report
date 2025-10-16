@@ -11,6 +11,8 @@ Then in the modified dataset I checked all the null and duplicate values by perf
           
           # df.duplicated().sum()
 
+From my understanding chid and casn and dsstox are representing some unique id of the chemicals used,global_mad and cytotox_mad represent the median average data and cytotoxin_median_um and cytotoxin_log_median um represent the values in micrometer to measure toxicity and the last column is for reference to the date created
+
 
 Here I saw that the cytotoxin_median raw and global_mad had null values around 6500
 Then I wanted to identify those data that had hit more than 0 test samples.
