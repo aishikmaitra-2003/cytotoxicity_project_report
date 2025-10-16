@@ -15,6 +15,9 @@ Then in the modified dataset I checked all the null and duplicate values by perf
 Here I saw that the cytotoxin_median raw and global_mad had null values around 6500
 Then I wanted to identify those data that had hit more than 0 test samples.
 
+Now I did the df.describe() and found out the following insights:
+
+
 So I created a filter through 
 
          #df[df["nhit"]>0]
@@ -22,9 +25,13 @@ So I created a filter through
 After this step I got a modified dataset with 4284 rows and no null or duplicated values.
 
 Now I checked the number of unique chemicals in the dataset and found out that in all cases of nhit>0 all the chemicals were unique.
+
+
 For this I used the operation 
 
        # df[df["nhit"]>0]["chnm"].nunique()
        
 The output came as 4284 which matches the original number of rows in the dataset.
 So now I move to the trend analysis part.
+
+I also found out the extreme values (outliers) and found 20 rows worth outliers.
