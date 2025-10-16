@@ -2,7 +2,7 @@
 
 This report is based on a 10,000 records based cytotoxic dataset where I had to perform various operations to find meaningful insights from the data.
 
-# 1.Data preprocessing
+# 1. Data preprocessing
 
 In this stage I first removed unnecessary columns from the dataset from which I will not be able to get valuable information like ids,names, dates etc.
 Then in the modified dataset I checked all the null and duplicate values by performing 
