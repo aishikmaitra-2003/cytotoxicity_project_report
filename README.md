@@ -16,6 +16,7 @@ Here I saw that the cytotoxin_median raw and global_mad had null values around 6
 Then I wanted to identify those data that had hit more than 0 test samples.
 
 So I created a filter through 
+
          #df[df["nhit"]>0]
          
 After this step I got a modified dataset with 4284 rows and no null or duplicated values.
